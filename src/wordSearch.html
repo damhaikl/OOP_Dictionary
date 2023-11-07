@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Adam Dictionary</title>
+    <link rel="stylesheet" type="text/css" href="wordSearch.css">
+</head>
+<body>
+    <div class="container">
+        <center><h1>Adam Dictionary</h1></center>
+        <div class="search-container">
+            <input type="text" id="searchData" placeholder="Enter a word">
+            <button id="top5Button">Top 5 Words</button>
+            <button id="searchButton">&#128269;</button>
+            <!-- Add the part of speech dropdown -->
+            <select id="partOfSpeechDropdown">
+                <option value="noun">Noun</option>
+                <option value="verb">Verb</option>
+                <option value="adjective">Adjective</option>
+                <option value="adverb">Adverb</option>
+                <option value="preposition">Preposition</option>
+                <!-- You can add more options if needed -->
+            </select>
+            <div id="likedWordsSection" style="display: none;">
+              <h2>Liked Words</h2>
+              <ul id="likedWordsList"></ul>
+            </div>
+        </div>
+        <div class="results">
+            <center><h2>Word Details</h2></center>
+            <ul id="resultsList"></ul>
+            <div id="sounds"></div>
+            <div id="relatedURL"></div>
+        </div>
+    </div>
+    <script src="wordSearch.js"></script>
+</body>
+</html>
